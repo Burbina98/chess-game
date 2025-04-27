@@ -1,0 +1,42 @@
+.board{
+    display: grid; 
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 1000px;
+    height: 1000px;
+    
+}
+
+.square{
+    display: flex;
+    width: 120px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;;
+}
+
+.piece{
+    width: 70px;
+    height: 70px
+}
+
+.white{
+    background-color: #ffddb7;
+}
+
+.black{
+    background-color: #666666;
+}
+
+@media screen and (max-width: 1200px){
+    .board{
+        width: 500px;
+        height: 500px;
+    }
+@media screen and (max-width: 1000px){
+    .square{
+        width: 100px;
+        height: 100px;
+    }
+}
+}
